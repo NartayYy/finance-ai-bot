@@ -1,0 +1,8 @@
+finance-bot-env/
+
+__pycache__/
+*.pyc
+.env
+minikube-linux-amd64
+temp/
+minikube-linux-amd64

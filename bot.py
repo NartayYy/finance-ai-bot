@@ -43,14 +43,14 @@ class FinanceBot:
             # Регистрируем пользователя
             if not self.db.is_user_registered(user_id):
                 success = self.db.register_user(
-                    user_id, 
-                    message.from_user.username, 
+                    user_id,
+                    message.from_user.username,
                     message.from_user.first_name
                 )
                 if success:
                     welcome_msg = f"🎉 Добро пожаловать, {message.from_user.first_name}!"
                 else:
-                    welcome_msg = "👋 С возвращением!"
+                    welcome_msg = "👋 С возвращением OPS!"
             else:
                 welcome_msg = "👋 С возвращением!"
 
@@ -59,7 +59,7 @@ class FinanceBot:
                 f"{welcome_msg}\n\n"
                 "💰 **Финансовый бот с AI готов к работе!**\n\n"
                 "📝 **Как пользоваться:**\n"
-                "• Пишите транзакции OPS: `обед 1500`\n"
+                "• Пишите транзакции: `обед 1500`\n"
                 "• Используйте кнопки меню внизу\n"
                 "• Получайте AI советы и анализ\n\n"
                 "🚀 **Начинайте прямо сейчас!**",

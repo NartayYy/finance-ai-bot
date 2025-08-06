@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  finance-ai-bot:
+    image: nartay938/finance-ai-bot:latest
+    container_name: finance-bot
+    env_file:
+      - .env
+    restart: unless-stopped

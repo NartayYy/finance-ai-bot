@@ -1,0 +1,9 @@
+finance-bot-env/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+minikube-linux-amd64
+nginx-deployment.yaml
+web-app.yaml
+temp/

@@ -50,9 +50,9 @@ class FinanceBot:
                 if success:
                     welcome_msg = f"🎉 Добро пожаловать, {message.from_user.first_name}!"
                 else:
-                    welcome_msg = "👋 С возвращением OPS!"
+                    welcome_msg = "👋 С возвращением"
             else:
-                welcome_msg = "👋 С возвращением! OPS"
+                welcome_msg = "👋 С возвращением!"
 
             # Отправляем приветствие с интерактивным меню
             await message.answer(

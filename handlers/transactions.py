@@ -4,6 +4,7 @@ from aiogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from database.db_manager import DatabaseManager
 from ai.openrouter_client import OpenRouterClient
 from config import Config
+from typing import Optional
 
 class TransactionHandler:
     """Обработчик транзакций"""
@@ -154,7 +155,7 @@ class TransactionHandler:
         
         return True
     
-    def _parse_transaction(self, text: str) -> tuple[str, float] | None:
+    def _parse_transaction(self, text: str) -> Optional[tuple[str, float]]:
         """Парсинг транзакции из текста"""
         
         # Убираем лишние пробелы
